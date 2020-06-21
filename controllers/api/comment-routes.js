@@ -18,6 +18,25 @@ router.get('/', (req, res) => {
             console.log(err);
             res.status(500).json(err);
         });
+    });
+
+//Get comments for Post ID
+router.get('/:id', (req, res) => {
+    Comment.findAll({
+        where: {
+            post_id: req.params.id
+        }
+    })
+        .then(dbCommentData => {
+          if (!dbCommentData) {
+              return;
+          }  
+          res.json(dbCommentData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err);
+        });
 });
 
 //Create new comments

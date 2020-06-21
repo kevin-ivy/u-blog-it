@@ -1,5 +1,5 @@
 function login() {
-    location.href = "/login";
+    location.href = "/dashboard";
   }
 
 function home() {
@@ -8,5 +8,5 @@ function home() {
 
 
 document.querySelector('#home').addEventListener('click', home); 
-document.querySelector('#login').addEventListener('click', login);
+document.querySelector('#dashboard').addEventListener('click', login);
   

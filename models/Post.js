@@ -22,7 +22,7 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [20]
+                len: [8]
             }
         },
         //link post to associated user id

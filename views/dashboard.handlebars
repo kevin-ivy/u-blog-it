@@ -1,0 +1,28 @@
+{{#if posts.length}}
+<section class="row w-100 m-3 p-2">
+  <h2>Your Posts</h2>
+    {{#each posts as |post|}}
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="ml-4 mb-2 edit-link btn btn-outline-info btn-dark btn-sm border border-info rounded">Edit Post</a>
+    {{/each}}
+</section>
+{{/if}}
+
+<div class="row mt-3 ml-4 mb-3 p-2 w-50 bg-dark mb-2 border border-dark rounded new-post-form">
+  <div class="col-12 text-info">
+    <h2>Create New Post</h2>
+  </div>
+  <div class="col-12">
+    <div class="form-group w-50 mt-3">
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div class="form-group">
+      <textarea name="post-text" class="form-control" cols="100"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-outline-info" id="submit-post">Submit Post</button>
+    </div>
+  </div>
+</div>
+
+<script src="/javascript/add-post.js"></script>
