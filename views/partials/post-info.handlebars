@@ -1,0 +1,11 @@
+<article class="row bg-dark w-100 m-2 p-2">
+    <div class="col-6 text-info p-2 mb-1 text-decoration-none">
+       <a href="/post/{{id}}" target="_blank" class="text-info"><h5>{{title}}</h5></a>
+    </div>
+    <div class="col-6 text-info p-2 mb-1 text-right">
+       {{user.username}} posted on {{format_date created_at}}
+    </div>
+    <div class="col-12 bg-secondary text-white p-2 mt-1 mb-1">
+        {{post_text}}
+    </div>
+</article>
