@@ -14,7 +14,7 @@ Comment.init(
         },
         //set up comment text, small length
         comment_text: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(250),
             allowNull: false,
             validate: {
                 len: [1]
