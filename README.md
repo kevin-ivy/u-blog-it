@@ -3,6 +3,10 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![Javascript](https://img.shields.io/badge/-Javascript-red)](https://shields.io/)  [![HTML](https://img.shields.io/badge/-HTML-success)](https://shields.io/)  [![HTML](https://img.shields.io/badge/-ES6-yellow)](https://shields.io/)  [![HTML](https://img.shields.io/badge/-Bootstrap-blueviolet)](https://shields.io/)  [![HTML](https://img.shields.io/badge/-Node-lightgrey)](https://shields.io/) [![MySQL](https://img.shields.io/badge/-MySQL-blueviolet)](https://shields.io/)
 
   A blog created for testing purposes.
+  
+  ## Screenshot
+  
+  ![Screenshot of Blog](/assets/screenshot.png)
 
   ## Table of Contents
 
